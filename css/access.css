@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+.access_map {
+  width: 60%;
+}
+
+.access_map::after {
+  content: "";
+  position: absolute;
+  background: url("../img/access.jpg") no-repeat center;
+  background-size: cover;
+  top: 10%;
+  left: 65%;
+  width: 30%;
+  height: 300px;
+}
+.access_item1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+.access_list2 {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .access_map {
+    margin: 0 17%;
+  }
+
+  .access_map::after {
+    display: none;
+  }
+
+  .access_item2 {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .access_map {
+    /* margin: unset;
+  width: 15%;
+  height: 15%; */
+}
+
+.access_map {
+  width: unset;
+  height: auto;
+  margin: 0;
+}
+
+.access_item1 {
+  display: block;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.access_list1 {
+  margin-bottom: 20px;
+}
+}
